@@ -1,6 +1,13 @@
-
+/*
+ * In Bank.java‘s main() method, we’re trying to access three 
+ * different private fields from the CheckingAccount class. 
+ * Edit the checking account class to make those fields public. 
+ * Make sure to edit only the fields you need in order to make 
+ * Bank‘s main() method run — don’t change any of the other 
+ * fields in CheckingAccount.
+ */
 public class CheckingAccount{
-  private String name;
+  public String name;
   private int balance;
   private String id;
 
@@ -11,11 +18,11 @@ public class CheckingAccount{
     id = inputId;
   }
 
-  private void addFunds(int fundsToAdd){
+  public void addFunds(int fundsToAdd){
     balance += fundsToAdd;
   }
 
-  private void getInfo(){
+  public void getInfo(){
     System.out.println("This checking account belongs to " + name +". It has " + balance + " dollars in it.");
   }
 
