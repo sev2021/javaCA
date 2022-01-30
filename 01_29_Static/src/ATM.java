@@ -19,6 +19,11 @@ public class ATM{
       totalMoney -= amountToWithdraw;
     }
   }
+  
+  //Static method
+  public static void averageMoney(){
+	    System.out.println("Average amount of money in all ATMs: " + totalMoney / numATMs);
+	  }
 
   public static void main(String[] args){
 	System.out.println("Total number of ATMs: " + ATM.numATMs);
@@ -31,6 +36,7 @@ public class ATM{
     secondATM.withdrawMoney(200);
     System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);
 
+    averageMoney();
   }
 
 }
