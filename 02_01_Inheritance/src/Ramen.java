@@ -6,10 +6,5 @@ public class Ramen extends Noodle {
     
   }
   
-  // public boolean isTasty() {
-    
-  //   return false;
-    
-  // }
   
 }
