@@ -51,7 +51,7 @@ public class AreaCalc {
     
 		System.out.println();
     
-		int A = (base * height) * 2;
+		double A = (base * height) / 2;  // was *2
     
 		System.out.println("The area is " + A + ".");
 		
