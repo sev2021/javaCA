@@ -1,3 +1,9 @@
+/*You are provided with some runner lap data. 
+ * Take a look at the loops we’re using to iterate through this 2D array. 
+ * Replace the incorrect for loop headers to perform row-major traversal. 
+ * Use the iterators outer and inner for the outer and inner loops.
+ *
+ */
 public class RowMajor {
 	public static void main(String[] args) {
 		// Given runner lap data
