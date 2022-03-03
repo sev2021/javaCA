@@ -20,7 +20,7 @@ public class FibMap { //Fibonacci Sequence using recursion and memoization
 	//declare variable
 	
 	// static method FibMap is static because of recursion requirements
-	public static int FibMap(int n, Map<Integer, Integer> myMap) {
+	public static int fibMap(int n, Map<Integer, Integer> myMap) {
 		if(n < 2) {
 			return 1;
 		}
@@ -28,7 +28,7 @@ public class FibMap { //Fibonacci Sequence using recursion and memoization
 			return myMap.get(n);
 		}
 		
-		int forMap = FibMap(n-1, myMap) + FibMap(n-2, myMap);
+		int forMap = fibMap(n-1, myMap) + fibMap(n-2, myMap);
 		myMap.put(n, forMap);
 		// System.out.println(myMap.toString()); // debug only
 		return forMap;
@@ -44,6 +44,6 @@ public class FibMap { //Fibonacci Sequence using recursion and memoization
 		userInput = new Scanner(System.in).nextInt();
 		
 		//compute
-		System.out.println(FibMap(userInput, myMap));
+		System.out.println(fibMap(userInput, myMap));
 	}
 }
