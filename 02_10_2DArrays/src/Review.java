@@ -19,20 +19,29 @@ public class Review {
 	 * Use the provided print statement to print the updated 2D array as well.
 	 */
 
-
+  scores[0][1] = 89.7;
+  scores[1][1] = 90.5;
+  scores[2][1] = 93.6;
+  scores[3][1] = 88.1;
+  
   System.out.println(Arrays.deepToString(scores));
 		
   /* You have realized that you will only be keeping track of 2 exam grades instead of 3. 
    * Declare and initialize an empty 4x2 2D array of double values  called newScores
    */
-  double[][] newScores = null;
+  double[][] newScores = new double[4][2];
 
 
   /* Using loops, copy all of the scores for exam 1 and 2 into the new 2D array. 
    * (do not include the -1 values)
    */
 
-
+  for(int row=0; row<4; row++ ){
+	    for(int col=0; col<2; col++ ){
+	      newScores[row][col] = scores[row][col];
+	    }
+	  }
+  
   System.out.println(Arrays.deepToString(newScores));
 
   /* You have allowed the students to complete an extra credit activity 
@@ -40,6 +49,11 @@ public class Review {
    * add 2 additional points to the grade in `newScores`
    */
 
+  for(int row=0; row<4; row++ ){
+	    for(int col=0; col<2; col++ ){
+	      if(newScores[row][col] < 90) newScores[row][col] += 2;
+	    }
+	  }
 
   System.out.println(Arrays.deepToString(newScores));
 	}
