@@ -54,6 +54,5 @@ public class BloodType{
 	//getter method
 	public String getDonateOutput() {
 		return receiveOutput + donateOutput;
-		
 	}
 }
