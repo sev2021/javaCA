@@ -49,7 +49,6 @@ public class BloodType{
 		if(userAge < 18) {
 			donateOutput = "\nYou are too young to donate blood.";
 		}
-
 	}
 	
 	//getter method

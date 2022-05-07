@@ -38,5 +38,6 @@ public class WhiteApp{
 		
 		//get output
 		System.out.print(bloodDonate.getDonateOutput());
+		
 	}
 }
