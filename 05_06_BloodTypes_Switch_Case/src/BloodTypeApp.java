@@ -9,7 +9,7 @@
  * 				can donate to and receive from
 */
 import java.util.Scanner;
-public class WhiteApp{
+public class BloodTypeApp{
 	public static void main(String[] args) {
 		//declare vars
 		String bloodType = "";
