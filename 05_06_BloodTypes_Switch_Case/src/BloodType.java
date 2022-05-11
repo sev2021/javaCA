@@ -14,7 +14,7 @@ public class BloodType{
 	private int userAge;
 	
 	//constructor + setter
-	public White(int userAge, String bloodType) {
+	public BloodType(int userAge, String bloodType) {
 		this.userAge = userAge;
 		this.bloodType = bloodType.toUpperCase();
 		receiveOutput = "Your blood type is: " + this.bloodType + "."

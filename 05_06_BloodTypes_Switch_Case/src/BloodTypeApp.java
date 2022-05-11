@@ -31,13 +31,12 @@ public class BloodTypeApp{
 		}
 		
 		//create object + set
-		White bloodDonate = new White(userAge, bloodType);
+		BloodType bloodDonate = new BloodType(userAge, bloodType);
 		
 		//compute blood donation
 		bloodDonate.computeBloodType();
 		
 		//get output
 		System.out.print(bloodDonate.getDonateOutput());
-		
 	}
 }
