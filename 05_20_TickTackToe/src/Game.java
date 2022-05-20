@@ -18,7 +18,7 @@ public class Game{
 		System.out.print("\nSelect the field (a1): ");
 		String playerMove = userScann.next();
 		
-		while(!"a1a2a3b1b2b3c1c2c3".contains(playerMove)) {
+		while(!"a1 a2 a3 b1 b2 b3 c1 c2 c3".contains(playerMove)) {
 			System.out.print("\nSelect CORECT field: ");
 			playerMove = userScann.next();
 		}
@@ -37,14 +37,14 @@ public class Game{
 			
 		for(int i=0; i<9; i++) {  // check rows
 			if(i%3 == 0) counTer = 0;  // reset check counter
-			counTer += (int)fields[i];
+			counTer += fields[i];
 			if(counTer == 264) return "Crosses";
 			if(counTer == 237) return "Noughts";
 		}
 		
 		for(int i=0; i<9; i++) {  // check downs
 			if(i%3 == 0) counTer = 0;  // reset check counter
-			counTer += (int)fields[i%3 * 3 + i/3];
+			counTer += fields[i%3 * 3 + i/3];
 			if(counTer == 264) return "Crosses";
 			if(counTer == 237) return "Noughts";
 		}
@@ -64,8 +64,6 @@ public class Game{
 		String winner = "Both";
 		Game myGame = new Game();
 		
-		char[] fields = {'_', '_', '_', '_', '_', '_', '_', '_', '_'};
-		System.out.print(fields[0] + fields[4] + fields[8] + " - " + (int)'_');
 		
 		/// BEHOLD!!
 		System.out.println("Noughts and crosses");
@@ -86,7 +84,7 @@ public class Game{
 			winner = myGame.checkWinner();
 			if("CrossesNoughts".contains(winner)) break;
 		}
-		System.out.print("\n*** END OF GAME *** \n** " +  winner + " wins! **");
+		System.out.print("\n*** END OF GAME *** \n*** " +  winner + " wins! ***");
 		myGame.printFields();
 	}
 }
