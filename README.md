@@ -4,14 +4,14 @@ Java links:
   
 **1D arrays in Java:** 
   
-  int tabl[ ] = {1, 2, 3};  
-  int tabl[ ] = new int[3];  
-  int tabl[ ] = new int[]{1,2,3};  
+  String tabl[ ] = {"1", "2", "3"};  
+  String tabl[ ] = new String[3];  
+  String tabl[ ] = new String[]{1,2,3};  
   -or-  
-  int[] tabl;   //array declaration   
-  tabl = new int[4];  //array initiation for size of 4  
+  String[] tabl;   //array declaration   
+  tabl = new String[4];  //array initiation for size of 4  
   ...  
-  tabl = new int[8];  //array initiation for size of 8  
+  tabl = new String[8];  //array initiation for size of 8  
   ...  
 
  **2D arrays in Java:**  
